@@ -1,0 +1,62 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-node-webkit-builder',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.1.6
+3 info using node@v0.10.33
+4 verbose node symlink /usr/local/bin/node
+5 warn package.json deadline@0.0.1 No description
+6 warn package.json deadline@0.0.1 No repository field.
+7 warn package.json deadline@0.0.1 No README data
+8 silly cache add args [ 'grunt-node-webkit-builder', null ]
+9 verbose cache add spec grunt-node-webkit-builder
+10 silly cache add parsed spec { raw: 'grunt-node-webkit-builder',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'grunt-node-webkit-builder',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: '*',
+10 silly cache add   type: 'range' }
+11 verbose addNamed grunt-node-webkit-builder@*
+12 silly addNamed semver.valid null
+13 silly addNamed semver.validRange *
+14 silly addNameRange { name: 'grunt-node-webkit-builder', range: '*', hasData: false }
+15 verbose mapToRegistry name grunt-node-webkit-builder
+16 verbose mapToRegistry uri https://registry.npmjs.org/grunt-node-webkit-builder
+17 verbose addNameRange registry:https://registry.npmjs.org/grunt-node-webkit-builder not in flight; fetching
+18 verbose request on initialization, where is /grunt-node-webkit-builder
+19 verbose request after pass 1, where is /grunt-node-webkit-builder
+20 verbose request url raw /grunt-node-webkit-builder
+21 verbose request resolving registry [ 'https://registry.npmjs.org/', './grunt-node-webkit-builder' ]
+22 verbose request after pass 2, where is https://registry.npmjs.org/grunt-node-webkit-builder
+23 verbose request no auth needed
+24 info attempt registry request try #1 at 22:38:52
+25 verbose request id 720c4dd5eda3495d
+26 http request GET https://registry.npmjs.org/grunt-node-webkit-builder
+27 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+28 info attempt registry request try #2 at 22:39:02
+29 http request GET https://registry.npmjs.org/grunt-node-webkit-builder
+30 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=Parse Error
+31 info attempt registry request try #3 at 22:40:02
+32 http request GET https://registry.npmjs.org/grunt-node-webkit-builder
+33 verbose stack Error: tunneling socket could not be established, cause=Parse Error
+33 verbose stack     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/request/node_modules/tunnel-agent/index.js:168:17)
+33 verbose stack     at ClientRequest.g (events.js:180:16)
+33 verbose stack     at ClientRequest.emit (events.js:95:17)
+33 verbose stack     at Socket.socketOnData (http.js:1592:9)
+33 verbose stack     at TCP.onread (net.js:527:27)
+34 verbose cwd /Users/kokdemo/github/deadline-nw
+35 error Darwin 14.0.0
+36 error argv "node" "/usr/local/bin/npm" "install" "grunt-node-webkit-builder" "--save-dev"
+37 error node v0.10.33
+38 error npm  v2.1.6
+39 error code ECONNRESET
+40 error network tunneling socket could not be established, cause=Parse Error
+40 error network This is most likely not a problem with npm itself
+40 error network and is related to network connectivity.
+40 error network In most cases you are behind a proxy or have bad network settings.
+40 error network
+40 error network If you are behind a proxy, please make sure that the
+40 error network 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]

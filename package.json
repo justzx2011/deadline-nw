@@ -1,0 +1,17 @@
+{
+    "version": "0.0.1",
+    "name": "deadline",
+    "main": "index.html",
+    "window": {
+        "title": "a-webkit",
+        "toolbar": false,
+        "resizable" : false,
+        "always-on-top" : false,
+        "fullscreen" : false,
+        "frame": false,
+        "position": "mouse",
+        "width": 400,
+        "height": 700
+    },
+    "chromium-args": "--enable-threaded-compositing"
+}
